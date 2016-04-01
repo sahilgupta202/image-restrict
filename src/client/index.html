@@ -2,9 +2,21 @@
 <html>
 <head>
 	<title>Image Restrict</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
 </head>
 <body>
 	<div>This is the test of Image Restriction</div>
-	<img src="https://s3.amazonaws.com/comprodls/products/javascript/4.0/OEBPS/cover.jpg">
+	<div>
+		<input id="img_url" type="text" name="image_url"/>
+		<button>Start</button>
+	</div>
+	<img src="" style="width:200px;">
+	<script>
+		$(document).ready(function(){
+			$('button').click(function(){
+				$('img').attr('src', $("#img_url").val());
+			});
+		});
+	</script>
 </body>
 </html>
