@@ -2,7 +2,9 @@
   "name": "image-restrict",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.13.4"
+    "cas-authentication": "0.0.8",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0"
   },
   "engines": {
     "node": " >= 0.10.2"
