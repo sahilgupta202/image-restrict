@@ -11,8 +11,8 @@ app.use( session({
 }));
  
 var cas = new CASAuthentication({
-    cas_url         : 'http://localhost:8080/cas',
-    service_url     : 'http://localhost:5000',
+    cas_url         : 'https://cas-server1.herokuapp.com',
+    service_url     : 'https://imagerestrict.herokuapp.com',
     cas_version : '2.0'
 });
 
