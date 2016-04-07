@@ -22,6 +22,8 @@ app.get( '/', cas.bounce, function ( req, res , next ) {
 
 app.use(express.static(__dirname + '/../client'));
 
+app.get( '/logout', cas.logout );
+
 app.listen(port, function () {
   console.log('app listening on port 5000.');
 });
