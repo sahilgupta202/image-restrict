@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var session = require('express-session');
 var port = process.env.PORT || 5000;
-var CASAuthentication = require('cas-authentication');
+var CASAuthentication = require('cas-module-demo');
 
 app.use( session({
     secret            : 'sahilg',
