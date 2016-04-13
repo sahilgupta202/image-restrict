@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CAS CLIENT</title>
+	<title>Image Restrict</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
 </head>
 <body>
-	<div>This is the test of CAS</div>
-	<h1>This is CLIENT 1</h1>
+	<div>This is the test of Image Restriction</div>
+	<div>
+		<input id="img_url" type="text" name="image_url"/>
+		<button>Start</button>
+	</div>
+	<img src="" style="width:200px;">
+	<script>
+		$(document).ready(function(){
+			$('button').click(function(){
+				$('img').attr('src', $("#img_url").val());
+			});
+		});
+	</script>
 </body>
 </html>
